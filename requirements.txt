@@ -1,0 +1,15 @@
+telethon
+pandas
+numpy
+matplotlib
+scikit-learn
+transformers
+datasets 
+tokenizers 
+torch
+shap 
+lime
+seqeval 
+scikit-learn
+sentencepiece  
+sentence-transformers
