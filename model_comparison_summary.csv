@@ -1,0 +1,29 @@
+model,f1,accuracy,precision,recall
+XLM-RoBERTa,0.060000000000000005,0.9052563270603504,0.10344827586206896,0.04225352112676056
+mBERT,0.08955223880597014,0.8639798488664987,0.08333333333333333,0.0967741935483871
+DistilBERT,0.0967741935483871,0.8463476070528967,0.0967741935483871,0.0967741935483871
+
+weighted_score = 0.6 * f1 + 0.2 * accuracy + 0.1 * precision + 0.1 * recall
+
+weighted_score = 0.6*0.06 + 0.2*0.9053 + 0.1*0.1034 + 0.1*0.0423
+            ≈ 0.036 + 0.181 + 0.0103 + 0.0042
+            ≈ 0.2315
+
+
+weighted_score = 0.6*0.0896 + 0.2*0.8640 + 0.1*0.0833 + 0.1*0.0968
+            ≈ 0.05376 + 0.1728 + 0.00833 + 0.00968
+            ≈ 0.2446
+
+
+weighted_score = 0.6*0.0968 + 0.2*0.8463 + 0.1*0.0968 + 0.1*0.0968
+            ≈ 0.0581 + 0.1693 + 0.00968 + 0.00968
+            ≈ 0.2467
+
+
+✅ Best Model: DistilBERT  
+
+Even though all models show poor entity recognition, DistilBERT  has: 
+
+    The highest F1-score 
+    The highest precision & recall 
+    A slightly lower accuracy , but better at identifying actual entities than others 
